@@ -47,7 +47,7 @@ class Connection extends BaseObject
     private $documentHandler = null;
     /** @var null|EdgeHandler $documentHandler */
     private $edgeHandler = null;
-    /** @var null|EdgeHandler $graphHandler */
+    /** @var null|GraphHandler $graphHandler */
     private $graphHandler = null;
 
     public function init()
@@ -71,13 +71,13 @@ class Connection extends BaseObject
     }
 
     /**
-     * @return EdgeHandler|null
+     * @return GraphHandler|null
      */
-    public function getGraphHandler(): EdgeHandler
+    public function getGraphHandler()
     {
         return $this->graphHandler;
     }
-
+    
     /**
      * @return null|CollectionHandler
      */
