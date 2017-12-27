@@ -47,7 +47,7 @@ class Connection extends BaseObject
     private $documentHandler = null;
     /** @var null|EdgeHandler $documentHandler */
     private $edgeHandler = null;
-    /** @var null|EdgeHandler $graphHandler */
+    /** @var null|GraphHandler $graphHandler */
     private $graphHandler = null;
 
     public function init()
