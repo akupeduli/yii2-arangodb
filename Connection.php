@@ -71,13 +71,13 @@ class Connection extends BaseObject
     }
 
     /**
-     * @return EdgeHandler|null
+     * @return GraphHandler|null
      */
-    public function getGraphHandler(): EdgeHandler
+    public function getGraphHandler()
     {
         return $this->graphHandler;
     }
-
+    
     /**
      * @return null|CollectionHandler
      */
